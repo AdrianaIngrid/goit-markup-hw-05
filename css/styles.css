@@ -77,6 +77,7 @@ body {
 }
 .navbar-studio:hover, .navbar-studio:focus{
     color: var(--ocean-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar-studio-child {
 display: flex;
@@ -89,6 +90,18 @@ margin: 0;
     flex-direction: row;
     align-items: center;
     gap: 40px;
+    position: relative;
+    color: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+::after {
+    content: pentru a seta conținutul care trebuie să fie afișat în pseudo-element;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean-color);
+    border-radius: 2px;
 }
 .logo-header {
     text-decoration: none;
@@ -104,8 +117,7 @@ margin: 0;
 }
 .logo-header:hover,.logo-header:focus {
     color: var(--ocean-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link {
     padding: 24px 0;
@@ -145,14 +157,14 @@ margin: 0;
 .address-contacts:hover,
 .address-contacts:focus {
     color: var(--ocean-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-items {
     display: flex;
     flex-direction: row;
     gap: 40px;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 /*Studio Footer*/
 .general-footer {
@@ -240,8 +252,7 @@ margin-bottom: 16px;
 }
 .social-media-link:hover, .social-media-link:focus {
     background-color: #31d0aa;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-svg {
     fill: var(--cloud-color);
@@ -281,8 +292,7 @@ margin-bottom: 16px;
     .order-service-button:focus{
     color: var(--white-color);
     background-color: var(--ocean-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 /* Section One Hero Section*/
 .section-one {
@@ -433,8 +443,7 @@ margin-bottom: 16px;
 }
 .link-media:hover, .link-media:focus {
     background-color: var(--ocean-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-media {
        fill: var(--cloud-color);
@@ -482,6 +491,7 @@ color: var(--navy-color);
 .the-six-elm:hover, .the-six-elm:focus {
     color: var(--ocean-color);
     border-color: var(--ocean-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .six-svg {
     fill: currentColor;
@@ -507,8 +517,7 @@ color: var(--navy-color);
     background-color: var(--ocean-color);
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-main {
     padding-top: 96px;
@@ -535,8 +544,7 @@ color: var(--navy-color);
 }
 .link-cards:hover, .link-cards:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Paragraph Syles*/
 .section-four-index-paragraph {
