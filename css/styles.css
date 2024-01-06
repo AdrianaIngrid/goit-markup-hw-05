@@ -45,6 +45,24 @@ body {
   img {
     display: block;
   }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    background-color:var(--background-color);
+    position: fixed;
+    z-index: 10;
+  }
+  .is-hidden {
+    visibility: hidden;
+  }
+  .close-button {
+    width: 408px;
+    height: 584px;
+    top: 80px;
+    left: 516px;
+    border-radius: 4px;
+
+  }
 /*Classes*/
 /*Link Clases*/
 /*Studio Header*/
@@ -84,9 +102,10 @@ margin: 0;
     margin-right: 76px;
     letter-spacing: 0.03em;
 }
-.logo-header:hover,
-.logo-header:focus {
+.logo-header:hover,.logo-header:focus {
     color: var(--ocean-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link {
     padding: 24px 0;
@@ -126,6 +145,8 @@ margin: 0;
 .address-contacts:hover,
 .address-contacts:focus {
     color: var(--ocean-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-items {
     display: flex;
@@ -219,6 +240,8 @@ margin-bottom: 16px;
 }
 .social-media-link:hover, .social-media-link:focus {
     background-color: #31d0aa;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-svg {
     fill: var(--cloud-color);
@@ -258,6 +281,8 @@ margin-bottom: 16px;
     .order-service-button:focus{
     color: var(--white-color);
     background-color: var(--ocean-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 /* Section One Hero Section*/
 .section-one {
@@ -408,6 +433,8 @@ margin-bottom: 16px;
 }
 .link-media:hover, .link-media:focus {
     background-color: var(--ocean-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-media {
        fill: var(--cloud-color);
@@ -480,7 +507,10 @@ color: var(--navy-color);
     background-color: var(--ocean-color);
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}.section-main {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-main {
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -505,6 +535,8 @@ color: var(--navy-color);
 }
 .link-cards:hover, .link-cards:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Paragraph Syles*/
 .section-four-index-paragraph {
