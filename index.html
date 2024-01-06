@@ -11,12 +11,8 @@
     <title>Studio</title>
     </head>
     <body>
-        <div class="modal is-hidden" data-modal> </div>
-
-          <div class="close-button"> 
-             <button data-modal-close>close</button>
-          </div>
-         <!--Antetul paginii-Top Line-->
+        
+            <!--Antetul paginii-Top Line-->
          
             <header class="header-parent">
                 <div class="header-div container">
@@ -46,8 +42,7 @@
                     <section class="section-one">
                     <div class="container">
                     <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
-                    <button type="button" class="order-service-button" data-modal-open>Order Service
-                    </button>
+                    <button type="button" class="order-service-button">Order Service</button>
                     </div>
                     </section>
                 
@@ -389,6 +384,20 @@
                 </div>
             </div>
             </footer>
+            <div data-modal-open  is-hidden class="open-button">
+                <div class="modal"> 
+                    <button type="button" data-modal-close class="close-button">x
+                        <svg width="8"  height="8" class="circle-image">
+                            <use href="">
+                                
+                            </use>
+
+                        </svg>
+                    </button>
+                </div>   
+            </div>
+           
+            
             <script src="./js/modal.js"></script>
         </body>
 </html>
