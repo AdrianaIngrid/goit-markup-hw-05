@@ -59,7 +59,16 @@ body {
     letter-spacing: 0.32px;
     color: var(--navy-color);
     position: relative;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-studio::after {
+    content: ""
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean-color);
+    border-radius: 2px;
 }
 .navbar-studio:hover, .navbar-studio:focus{
     color: var(--ocean-color);
@@ -80,15 +89,7 @@ margin: 0;
     color: var(--ocean-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-::after {
-    content
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--ocean-color);
-    border-radius: 2px;
-}
+
 .logo-header {
     text-decoration: none;
     font-family: 'Raleway',sans-serif;
@@ -247,7 +248,7 @@ margin-bottom: 16px;
 .footer-svg {
     fill: var(--cloud-color);
 }
-/*modal classes*/
+/*modal classes -in footer*/
 .open-button {
     position: fixed;
     top: 0;
@@ -285,7 +286,7 @@ margin-bottom: 16px;
     justify-content: center;
     align-items: center;
     background-color: var(--cornflower-color);
-    margin: 1px solid rgba(0, 0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -304,6 +305,19 @@ margin-bottom: 16px;
 /*Buttons*/
 /*Index buttons*/
 /* Titles Styles*/
+/* Section 1 -Hero Section*/
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)) , url(../images/people-office-bg.jpg);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;    
+    color:var(--white-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    flex-grow: 1;
+}
 .hero-section-title {
     color: var(--white-color);
     font-size: 56px;
@@ -338,20 +352,8 @@ margin-bottom: 16px;
     color: var(--white-color);
     background-color: var(--ocean-color);
     }
-/* Section One Hero Section*/
-.section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)) , url(../images/people-office-bg.jpg);    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;    
-    color:var(--white-color);
-    padding-top: 188px;
-    padding-bottom: 188px;
-    text-align: center;
-    flex-grow: 1;
-}
-/* Section Two-Strategy-Punctuality...*/
+
+/* Section 2-Strategy-Punctuality...*/
 .section-two-parent {
     padding: 120px 0;
     width: 1440px;
@@ -383,7 +385,7 @@ margin-bottom: 16px;
     margin-bottom: 8px;
     
 }
-    /*What are we doing */
+    /*Section 3-What are we doing */
 .three-section-title {
     font-weight: 700;
     font-size: 36px;
@@ -394,23 +396,22 @@ margin-bottom: 16px;
     margin-bottom: 72px;
     text-align: center;
 }
-    .section-three-parent {
-        padding-bottom: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
-       .section-three-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    }
-    .section-three-card {
-        width: 360px;
-        width: calc((100%-48px)/3);
-        /*((100%-48)/3);*/
-    }
-/*Our Team -Section Four*/
+.section-three-parent {
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-three-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.section-three-card {
+    width: 360px;
+    width: calc((100%-48px)/3);
+}
+/*Section 4-Our Team*/
 .four-section-title {
     text-align: center;
     color: var(--navy-color);
@@ -422,7 +423,6 @@ margin-bottom: 16px;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-
 .section-four-parent {
     display: flex;
     flex-direction: row;
@@ -532,7 +532,7 @@ color: var(--navy-color);
     align-items: center;
     justify-content: center;
     color: #8E8F99;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .the-six-elm:hover, .the-six-elm:focus {
     color: var(--ocean-color);
@@ -555,9 +555,7 @@ color: var(--navy-color);
     padding: 12px 24px;
     border-radius: 4px ;
     border: 1px solid var(--cornflower-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1)
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
    }
 .all-filter-button:hover, .all-filter-button:focus {
     color: var(--white-color);
@@ -565,7 +563,7 @@ color: var(--navy-color);
     background-color: var(--ocean-color);
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .section-main {
     padding-top: 96px;
@@ -593,7 +591,6 @@ color: var(--navy-color);
 }
 .link-cards:hover, .link-cards:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0%);
 }
 /*Paragraph Syles*/
