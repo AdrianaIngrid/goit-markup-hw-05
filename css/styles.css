@@ -158,7 +158,6 @@ margin: 0;
 .general-footer {
 background-color: var(--navy-color);
 padding: 100px 0px;
-width: 1440px;
 }
 .double-div-footer {
     display: flex;
@@ -308,6 +307,7 @@ margin-bottom: 16px;
 /* Titles Styles*/
 /* Section 1 -Hero Section*/
 .section-one {
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)) , url(../images/people-office-bg.jpg);    
     background-repeat: no-repeat;
     background-position: center;
@@ -357,7 +357,6 @@ margin-bottom: 16px;
 /* Section 2-Strategy-Punctuality...*/
 .section-two-parent {
     padding: 120px 0;
-    width: 1440px;
 }
 .section-two-titles {
     color: var(--navy-color);
@@ -496,7 +495,6 @@ margin-bottom: 16px;
 
 /* Section 5 Customers */
 .section-five-parent {
-    width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -588,7 +586,7 @@ color: var(--navy-color);
 }
 .link-cards {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-cards:hover, .link-cards:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -624,6 +622,8 @@ color: var(--navy-color);
     padding: 32px 16px;
     border: 1px solid var(--cornflower-color);
     border-top: none;
+    position: relative;
+    overflow: hidden;
 }
 .flash-window {
     position: relative;
