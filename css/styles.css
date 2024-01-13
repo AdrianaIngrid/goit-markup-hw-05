@@ -649,11 +649,8 @@ color: var(--navy-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
 }
-.flash-window-paragraph,
-.link-cards:hover {
+.link-cards:hover .flash-window-paragraph {
     transform: translateY(0%);
 }
-.flash-window-paragraph,
-.link-cards:focus {
+.link-cards:focus .flash-window-paragraph {
     transform: translateY(0%);
-}
