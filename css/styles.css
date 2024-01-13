@@ -654,3 +654,4 @@ color: var(--navy-color);
 }
 .link-cards:focus .flash-window-paragraph {
     transform: translateY(0%);
+}
